@@ -1,0 +1,39 @@
+Description: Fix spelling errors.
+Author: Eric Heintzmann <heintzmann.eric@free.fr>
+Author: Yavor Doganov <yavor@gnu.org>
+Last-Update: 2018-02-25
+---
+
+--- gnustep-back.orig/Tools/gpbs.m
++++ gnustep-back/Tools/gpbs.m
+@@ -1292,7 +1292,7 @@
+ 
+       if (host == nil)
+         {
+-          NSLog(@"gpbs - unknown NSHost argument  ... %@ - quiting.", hostname);
++          NSLog(@"gpbs - unknown NSHost argument  ... %@ - quitting.", hostname);
+           exit(EXIT_FAILURE);
+         }
+       a = [host names];
+--- gnustep-back.orig/Source/xlib/XGBitmap.m
++++ gnustep-back/Source/xlib/XGBitmap.m
+@@ -804,7 +804,7 @@
+           img.pro_mul = 255;
+           break;
+         default:
+-          NSLog(@"Bizzare number of bits per sample %d", bits_per_sample);
++          NSLog(@"Bizarre number of bits per sample %d", bits_per_sample);
+           return -1;
+      }
+ 
+--- gnustep-back.orig/Source/xlib/XGGeometry.m
++++ gnustep-back/Source/xlib/XGGeometry.m
+@@ -62,7 +62,7 @@
+                        &ignoreUInt,
+                        &ignoreUInt))
+       {
+-        NSDebugLLog (@"XGGeometry", @"invalide Drawable in gswindow_device");
++        NSDebugLLog (@"XGGeometry", @"invalid Drawable in gswindow_device");
+         return XGMakeRect (0, 0, 0, 0);
+       }
+ 
